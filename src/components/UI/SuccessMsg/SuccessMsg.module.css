@@ -1,0 +1,8 @@
+.SuccessMsg {
+  background-color: aquamarine;
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+}

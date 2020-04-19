@@ -1,0 +1,55 @@
+.Logo {
+  background-color: white;
+  padding: 8px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+}
+
+.Logo img {
+  height: 100%;
+}
+
+.Logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+.Rotate_center:hover,
+.Rotate_center:focus {
+  -webkit-animation: rotate-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: rotate-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .Rotate_center:focus,
+  .Rotate_center:hover {
+    animation: none;
+  }
+}

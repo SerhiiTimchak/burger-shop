@@ -1,0 +1,56 @@
+.OrderedList {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.Burger_desc {
+  text-align: center;
+}
+
+.OrderedList li {
+  list-style-type: none;
+  position: relative;
+  padding: 10px 0;
+  margin: 0;
+  border: solid 10px;
+  border-radius: 40px 10px 10px 40px;
+  background-color: #cf8f2e;
+  color: white;
+}
+
+.OrderedList li:hover {
+  -webkit-box-shadow: -1px 13px 7px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 13px 7px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 13px 7px -8px rgba(0, 0, 0, 0.75);
+}
+
+.OrderedList li {
+  padding-left: 50px;
+}
+
+.ingAmount {
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  color: #cf8f2e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.OrderedList li::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: solid 2px white;
+  background-color: white;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+}
